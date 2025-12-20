@@ -16,15 +16,13 @@ const config = {
   // Hosting config (safe defaults for local dev)
   // We'll adjust later for GitHub Pages / custom domain.
   // =========================
-    url: 'https://waikyy90.github.io',
-    baseUrl: '/qpc-site/',
-    organizationName: 'waikyy90',
-    projectName: 'qpc-site',
+  url: 'https://waikyy90.github.io',
+  baseUrl: '/qpc-site/',
+  organizationName: 'waikyy90',
+  projectName: 'qpc-site',
 
   // These are only needed for GitHub Pages deployment.
   // Keep placeholders for now; we'll set properly when deploying.
-  organizationName: 'waikyy90', // TODO: change later (your GitHub username/org)
-  projectName: 'qpc-site',     // TODO: change later (your repo name)
 
   // During early setup, "warn" is less annoying than "throw".
   // You can switch back to 'throw' once stable.
