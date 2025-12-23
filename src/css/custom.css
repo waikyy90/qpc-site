@@ -86,7 +86,7 @@
 .navbar__title {
   font-size: 1.12rem;
   font-weight: 700;
-  margin: 0;
+  margin-left: 3.1rem;
   padding: 0;
   line-height: 1.15;
   white-space: nowrap;
@@ -106,8 +106,6 @@
 .navbar__link--active {
   font-weight: 700;
 }
-
-
 
 /* =========================
    Doc layout & spacing
@@ -136,6 +134,9 @@
   .theme-doc-markdown {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+  .navbar_title {
+      margin-left:3.5rem;
   }
 }
 
@@ -220,5 +221,39 @@
 
   .qpcHeroTag {
     text-align: center;
+  }
+}
+
+/* Mobile: hide the long navbar title to avoid clutter */
+@media (max-width: 996px) {
+  .navbar__title {
+    display: none !important;
+  }
+}
+
+/* Mobile: increase navbar height and icon tap targets */
+@media (max-width: 996px) {
+  .navbar {
+    min-height: 64px;
+  }
+
+  .navbar__toggle,
+  .navbar__items .navbar__item,
+  .navbar__items .navbar__link,
+  .navbar__items .navbar__brand {
+    padding: 10px 12px;
+  }
+
+  /* Optional: make the hamburger icon bigger */
+  .navbar__toggle svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 996px) {
+  .navbar__logo img {
+    height: 28px;   /* tweak: 24–32 usually good */
+    width: auto;
   }
 }
