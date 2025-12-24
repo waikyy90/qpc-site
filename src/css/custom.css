@@ -38,7 +38,6 @@
 
 .navbar {
   min-height: 80px;
-  height: auto;
   padding: 0;
   border-bottom: 1px solid var(--ifm-toc-border-color);
 }
@@ -46,14 +45,12 @@
 .navbar__inner {
   min-height: 80px;
   align-items: center;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 0 24px;
 }
 
 @media (min-width: 1200px) {
   .navbar__inner {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 0 32px;
   }
 }
 
@@ -67,7 +64,6 @@
 
 .navbar__logo img {
   height: 46px;
-  width: auto;
   display: block;
 }
 
@@ -76,12 +72,9 @@
   font-size: 1.12rem;
   font-weight: 700;
   line-height: 1.15;
-  margin: 0;
-  padding: 0;
   white-space: nowrap;
 }
 
-/* Push menu to the right */
 .navbar__items--right {
   margin-left: auto;
   align-items: center;
@@ -100,7 +93,6 @@
    ================================================= */
 
 @media (max-width: 996px) {
-  /* Hide long title on mobile */
   .navbar__title {
     display: none !important;
   }
@@ -136,47 +128,47 @@
 }
 
 .theme-doc-container {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
 }
 
 .theme-doc-markdown {
-  padding-top: 0.25rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding: 0.25rem 1.5rem;
 }
 
 @media (min-width: 996px) {
   .theme-doc-markdown {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding: 0.25rem 2.5rem;
   }
 }
 
 @media (max-width: 768px) {
   .theme-doc-markdown {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding: 0.25rem 1.25rem;
   }
 }
 
 /* =================================================
-   Typography tuning
+   Typography tuning (calmer hierarchy)
    ================================================= */
 
 .markdown h1 {
-  font-size: 2rem;
-  line-height: 1.15;
-  margin-bottom: 0.8rem;
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .markdown h2 {
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  margin: 2rem 0 0.75rem;
+}
+
+.markdown h3 {
+  font-size: 1.05rem;
+  margin: 1.25rem 0 0.5rem;
 }
 
 /* =================================================
-   Footer (small, calm, non-distracting)
+   Footer
    ================================================= */
 
 .footer {
@@ -186,72 +178,48 @@
 .footer__copyright {
   font-size: 0.85rem;
   opacity: 0.8;
-  margin: 0;
   text-align: center;
-  line-height: 1.4;
 }
 
-.footer .container {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-/* =========================
-   Welcome hero (no border)
-   ========================= */
+/* =================================================
+   Welcome hero
+   ================================================= */
 
 .qpcHero {
   position: relative;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   gap: 28px;
 
-  padding: 28px 28px;
+  padding: 28px;
+  min-height: 240px;
   border-radius: 18px;
-
-  background: transparent;
   overflow: hidden;
 }
 
-/* Background texture (stronger) */
+/* Background texture */
 .qpcHero::before {
   content: "";
   position: absolute;
   inset: 0;
-
-  background-image: url("/img/hero-texture.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left 23%;
-
-  /* Make the texture actually visible */
+  background: url("/img/hero-texture.png") no-repeat left 23% / cover;
   opacity: 0.72;
-
-  pointer-events: none;
   z-index: 0;
 }
 
-.qpcHero {
-  min-height: 240px;   /* try 240–280 */
-}
-
-/* Fade OUT the texture towards the right (so the logo area stays cleaner)
-   This does NOT “white-wash” the whole hero; it only softens the far-right. */
+/* Right fade */
 .qpcHero::after {
   content: "";
   position: absolute;
   inset: 0;
-
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0.0) 0%,
-    rgba(255, 255, 255, 0.0) 55%,
-    rgba(255, 255, 255, 0.22) 78%,
-    rgba(255, 255, 255, 0.45) 100%
+    transparent 0%,
+    transparent 55%,
+    rgba(255,255,255,0.22) 78%,
+    rgba(255,255,255,0.45) 100%
   );
-
-  pointer-events: none;
   z-index: 1;
 }
 
@@ -266,43 +234,41 @@
 }
 
 .qpcHeroTag {
-  font-style: normal;        /* remove italics */
   font-weight: 500;
-  letter-spacing: 0.0rem;
-  text-transform: none;
-
-  font-size: 1.15rem;        /* slightly larger */
+  font-size: 1.15rem;
   color: var(--ifm-color-primary);
-
   margin-bottom: 18px;
-  opacity: 1;
 }
 
 .qpcHeroBlurb {
   font-size: 1rem;
   line-height: 1.6;
   opacity: 0.9;
-  color: var(--ifm-font-color-base);
 }
 
+/* =================================================
+   Hero logo (size + glow)
+   ================================================= */
 
 .qpcHeroLogo {
   width: 160px;
-  height: auto;
   flex: 0 0 auto;
+
+  /* Brand glow (light + dark) */
+  filter: drop-shadow(0 0 28px rgba(123,182,255,0.35));
 }
 
-/* Mobile: stack */
+/* Mobile */
 @media (max-width: 768px) {
   .qpcHero {
     flex-direction: column;
     align-items: flex-start;
     padding: 22px 18px;
-    gap: 16px;
   }
 
   .qpcHeroLogo {
     width: 140px;
+    display: none;
   }
 
   .qpcHeroTag {
@@ -310,89 +276,75 @@
   }
 }
 
-/* Dark mode: use a separate background asset + add a dark base */
+/* =================================================
+   Dark mode — hero
+   ================================================= */
+
 html[data-theme="dark"] .qpcHero {
   background: linear-gradient(
     90deg,
-    rgba(20, 22, 26, 0.92) 0%,
-    rgba(20, 22, 26, 0.78) 55%,
-    rgba(20, 22, 26, 0.65) 100%
+    rgba(20,22,26,0.92),
+    rgba(20,22,26,0.78),
+    rgba(20,22,26,0.65)
   );
 }
 
 html[data-theme="dark"] .qpcHero::before {
   background-image: url("/img/hero-texture-dark.png");
-  opacity: 0.75;                 /* dark texture can be stronger */
-  background-position: left 23%; /* adjust if needed */
-  filter: none;
+  opacity: 0.75;
 }
 
 html[data-theme="dark"] .qpcHero::after {
-  /* Instead of darkening, we “clean” the logo area with subtle vignette */
   background: radial-gradient(
-      1200px 400px at 85% 50%,
-      rgba(20, 22, 26, 0.15) 0%,
-      rgba(20, 22, 26, 0.65) 60%,
-      rgba(20, 22, 26, 0.9) 100%
-    );
+    1200px 400px at 85% 50%,
+    rgba(20,22,26,0.15),
+    rgba(20,22,26,0.65),
+    rgba(20,22,26,0.9)
+  );
 }
 
-/* Typography tweaks for dark */
 html[data-theme="dark"] .qpcHeroTag {
-  color: #7bb6ff;   /* a lighter, calmer blue than primary */
+  color: #7bb6ff;
 }
 
 html[data-theme="dark"] .qpcHeroBlurb {
   opacity: 0.92;
 }
 
+/* Dark mode: merge glow + grounding shadow */
 html[data-theme="dark"] .qpcHeroLogo {
-  filter: drop-shadow(0 6px 18px rgba(0,0,0,0.55));
+  filter:
+    drop-shadow(0 0 30px rgba(123,182,255,0.4))
+    drop-shadow(0 6px 18px rgba(0,0,0,0.55));
 }
 
-/* =========================
-   Hide hero logo on mobile
-   ========================= */
-
-@media (max-width: 768px) {
-  .qpcHeroLogo {
-    display: none;
-  }
-}
-
-/* =========================
-   Expandable sections (details/summary)
-   Used in Expertise + FAQs
-   ========================= */
+/* =================================================
+   Expandable sections (Expertise + FAQs)
+   ================================================= */
 
 details {
-  background: #ffffff;
+  background: #fff;
   border: 1px solid var(--ifm-toc-border-color);
   border-radius: 10px;
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
 }
 
-details[open] {
-  background: #ffffff;
-}
-
 details summary {
   cursor: pointer;
+  font-size: 0.95rem;
   font-weight: 600;
-  list-style: none; /* remove default marker */
+  list-style: none;
 }
 
 details summary::-webkit-details-marker {
-  display: none; /* Chrome/Safari */
+  display: none;
 }
 
-/* Optional: subtle hover affordance */
 details summary:hover {
   color: var(--ifm-color-primary);
 }
 
-/* Space content nicely when opened */
 details > *:not(summary) {
   margin-top: 0.75rem;
 }
@@ -401,4 +353,12 @@ details > *:not(summary) {
 html[data-theme="dark"] details {
   background: var(--ifm-background-surface-color);
   border-color: var(--ifm-toc-border-color);
+}
+
+/* =================================================
+   Dark-mode image glow (Expertise illustrations)
+   ================================================= */
+
+html[data-theme="dark"] details img {
+  filter: drop-shadow(0 0 18px rgba(255,255,255,0.35));
 }
