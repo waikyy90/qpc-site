@@ -1,27 +1,41 @@
 ---
 title: Our Approach
 ---
+
 # Our Approach to Proteomics Collaboration
 <br />
-We believe robust proteomics data is best achieved through thoughtful experimental planning, careful execution, and close collaboration throughout a study.
 
-**How we work with collaborators**
+We believe robust proteomics studies are best achieved through careful experimental thinking and close collaboration throughout a project. Our role is to work alongside researchers to design, execute, and interpret studies in a way that supports meaningful and defensible biological conclusions.
 
-Each project begins with discussion and alignment on the biological question, study objectives, and technical feasibility to ensure robust, interpretable outcomes. Through this approach, we operate as a collaborative research partner rather than a service facility.
+---
 
-**From question to experiment**
+## How we work with collaborators
 
-Biological questions are translated into appropriate proteomics strategies through joint planning. We advise on experimental design, controls, sample types, and quantitative approaches, and discuss pilot or optimization steps where appropriate before larger studies proceed.
+Each project begins with discussion and alignment on the biological question, study objectives, and technical feasibility. This early engagement helps ensure that experimental strategies are appropriate for the system under study and that expectations are aligned before data generation begins.
 
-**From data to insight**
+Through this process, we operate as a collaborative research partner rather than a transactional service.
 
-Support extends beyond data acquisition to include data processing, quality assessment, and interpretation. Results are reviewed together with collaborators to ensure analytical soundness and biological relevance.
+---
 
-**What collaborators can expect**
+## From biological question to experimental strategy
 
+Biological questions are translated into suitable proteomics approaches through joint planning. We advise on experimental design, controls, sample types, and quantitative strategies, and discuss pilot or optimisation steps where appropriate prior to larger-scale studies.
+
+This stage focuses on ensuring that the experimental design can support the intended biological interpretation.
+
+---
+
+## From results to understanding
+
+Support extends beyond data generation to include review and discussion of results in biological context. Findings are examined together with collaborators to assess robustness, interpretability, and relevance to the original research question.
+
+---
+
+## What collaborators can expect
+
+- Early discussion of project scope and feasibility  
 - Guidance on experimental design and workflow selection  
 - Access to quantitative proteomics and mass spectrometry platforms  
-- Processed, quality-controlled datasets  
-- Clear documentation of methods and analysis parameters  
-- Support with data interpretation and discussion  
-- Input on proteomics aspects of manuscripts and reporting
+- Processed, quality-controlled datasets with supporting documentation  
+- Collaborative discussion of results and interpretation  
+- Input on proteomics aspects of manuscripts and reporting  
