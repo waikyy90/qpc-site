@@ -5,7 +5,6 @@ title: Publications
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Publications
-<br />
 
 The Quantitative Proteomics Core (QPC) supports proteomics studies across basic, translational, and clinical research.
 Publications below include projects supported by QPC at varying levels of involvement, from study design and data generation to analysis and interpretation.
@@ -15,130 +14,177 @@ Publications below include projects supported by QPC at varying levels of involv
 ---
 
 ## Representative figures by workflow
-<br />
 
-These examples are curated to showcase what QPC enables across key proteomics applications (proteome, interactome, clinical, spatial).
+These examples showcase what QPC enables across key proteomics applications.
 Expand each entry to view a short description and a representative panel.
+
+---
 
 ### Proteome analysis
 
+<div className="qpc-publications">
+
 <details>
-<summary><b>ZBTB48 is a priming factor regulating B-cell-specific CIITA expression</b> — Rane <i>et al.</i>, <i>The EMBO Journal</i> (2024)</summary>
+  <summary>
+    <span className="qpc-pub-title">
+      ZBTB48 is a priming factor regulating B-cell-specific CIITA expression
+    </span>
+    <span className="qpc-pub-meta">
+      Rane <em>et al.</em>, <em>The EMBO Journal</em> (2024)
+    </span>
+  </summary>
 
-<br />
+  <div className="qpc-details-image">
+    <img
+      src={useBaseUrl('img/4-qpc-pub-proteome-2024-volcano.png')}
+      alt="Figure 3F: IFNγ treated U2OS WT vs ZBTB48 KO proteome"
+      className="qpc-illustration"
+    />
+  </div>
 
-<div style={{ display: 'flex', justifyContent: 'center', margin: '0.4rem 0 0.8rem' }}>
-  <img
-    src={useBaseUrl('img/4-qpc-pub-proteome-2024-volcano.png')}
-    alt="Figure 3F: IFNγ treated U2OS WT vs ZBTB48 KO proteome"
-    style={{ width: '82%', maxWidth: '900px', height: 'auto', display: 'block' }}
-  />
-</div>
+  <div className="qpc-details-intro">
+    Quantitative comparison of WT versus ZBTB48 knockout proteomes under IFNγ stimulation.
+  </div>
 
-**Why this figure:** Example of quantitative proteome comparison (WT vs KO) under IFNγ stimulation, highlighting regulated proteins (volcano plot).
+  **Why this figure**  
+  Example of a global proteome comparison highlighting significantly regulated proteins using label-free quantitative proteomics.
 
-**QPC contribution:** Quantitative proteomics support and analysis as part of the study’s proteomics component.
+  **QPC contribution**  
+  Quantitative proteomics support and downstream data analysis.
 
-- **Link / DOI:** https://doi.org/10.1038/s44318-024-00306-y
-- **Figure credit:** Rane G. <i>et al.</i>, The EMBO Journal (2024), Fig. 3F. Used under **CC BY 4.0** (cropped).  
-  License: https://creativecommons.org/licenses/by/4.0/
+  - **DOI:** https://doi.org/10.1038/s44318-024-00306-y  
+  - **Figure credit:** Rane G. <em>et al.</em>, The EMBO Journal (2024), Fig. 3F.  
+    Used under **CC BY 4.0** (cropped): https://creativecommons.org/licenses/by/4.0/
 
 </details>
 
-<!-- Add more Proteome examples here (3–6 max) -->
+</div>
 
 ---
 
 ### Interactome analysis (IP-MS / ChIP-MS / proximity)
 
+<div className="qpc-publications">
+
 <details>
-<summary><b>ChIP-MS reveals the local chromatin composition by label-free quantitative proteomics</b> — Yong <i>et al.</i>, <i>bioRxiv</i> (2023)</summary>
+  <summary>
+    <span className="qpc-pub-title">
+      ChIP-MS reveals the local chromatin composition by label-free quantitative proteomics
+    </span>
+    <span className="qpc-pub-meta">
+      Yong <em>et al.</em>, <em>bioRxiv</em> (2023)
+    </span>
+  </summary>
 
-<br />
+  <div className="qpc-details-image">
+    <img
+      src={useBaseUrl('img/4-qpc-pub-chipms-2023-volcano.png')}
+      alt="ZBTB48 WT vs KO ChIP-MS volcano plot"
+      className="qpc-illustration"
+    />
+  </div>
 
-<div style={{ display: 'flex', justifyContent: 'center', margin: '0.4rem 0 0.8rem' }}>
-  <img
-    src={useBaseUrl('img/4-qpc-pub-chipms-2023-volcano.png')}
-    alt="ZBTB48 WT vs KO ChIP-MS volcano plot"
-    style={{ width: '82%', maxWidth: '900px', height: 'auto', display: 'block' }}
-  />
+  <div className="qpc-details-intro">
+    ChIP-MS interrogation of chromatin-associated protein complexes using genetic knockout controls.
+  </div>
+
+  **Research summary**  
+  Chromatin immunoprecipitation coupled to label-free quantitative mass spectrometry (ChIP-MS) was used to characterise proteins associated with ZBTB48 at telomeric regions. A WT vs knockout comparison enabled discrimination of specific versus background binding.
+
+  **QPC contribution**  
+  Experimental design, ChIP-MS workflow optimisation, quantitative proteomics analysis, and data interpretation.
+
+  - **DOI:** https://www.biorxiv.org/content/10.1101/2023.01.27.525999v1  
+  - **Figure credit:** Yong W.K. <em>et al.</em>, bioRxiv (2023). Adapted from published figures.
+
+</details>
+
+<details>
+  <summary>
+    <span className="qpc-pub-title">[Paper title]</span>
+    <span className="qpc-pub-meta">[First author] <em>et al.</em>, <em>[Journal]</em> ([Year])</span>
+  </summary>
+
+  <div className="qpc-details-intro">
+    [One-line description of workflow and readout]
+  </div>
+
+  **Workflow showcased**  
+  IP-MS / ChIP-MS / proximity labelling
+
+  - **Link / DOI:** [link]
+
+</details>
+
 </div>
-
-**Research summary:**  
-This study applied chromatin immunoprecipitation coupled to label-free quantitative mass spectrometry (ChIP-MS) to characterize proteins associated with ZBTB48 at telomeric regions.
-
-A wild-type versus ZBTB48 knockout comparison was used as a genetic control to distinguish ZBTB48-dependent chromatin-associated proteins from background binding. This approach enables specific interrogation of telomere locus-associated protein composition using ChIP-MS.
-
-**Why this figure:** Representative example of ChIP-MS using genetic knockout controls to demonstrate specificity of chromatin-associated protein enrichment.
-
-**QPC contribution:** Experimental design, ChIP-MS workflow optimisation, quantitative proteomics analysis, and data interpretation.
-
-- **Link / DOI:** https://www.biorxiv.org/content/10.1101/2023.01.27.525999v1  
-- **Figure credit:** Yong W.K. <i>et al.</i>, bioRxiv (2023). Adapted from published figures.
-</details>
-
-<details>
-<summary><b>[Paper title]</b> — [First author] <i>et al.</i>, <i>[Journal]</i> ([Year])</summary>
-
-<br />
-
-**Workflow showcased:** IP-MS / ChIP-MS / BioID / APEX / etc.  
-**Key readout:** [1 line — e.g., interaction network / enriched complex / binding partners]
-
-- **Link / DOI:** [link]
-- **Figure credit:** [if you include figure, add license/permission statement]
-
-</details>
-
-<!-- Add 3–6 Interactome examples -->
 
 ---
 
 ### Clinical / translational proteomics
 
+<div className="qpc-publications">
+
 <details>
-<summary><b>[Paper title]</b> — [First author] <i>et al.</i>, <i>[Journal]</i> ([Year])</summary>
+  <summary>
+    <span className="qpc-pub-title">[Paper title]</span>
+    <span className="qpc-pub-meta">[First author] <em>et al.</em>, <em>[Journal]</em> ([Year])</span>
+  </summary>
 
-<br />
+  <div className="qpc-details-intro">
+    Quantitative proteomics applied to clinically relevant samples.
+  </div>
 
-**Clinical context:** [serum / plasma / tissue / FFPE / biopsy]  
-**Proteomics strategy:** [label-free / TMT / DIA / fractionation / etc.]
+  **Clinical context**  
+  Serum / plasma / tissue / FFPE
 
-- **Link / DOI:** [link]
+  **Proteomics strategy**  
+  Label-free / TMT / DIA
+
+  - **Link / DOI:** [link]
 
 </details>
+
+</div>
 
 ---
 
 ### Spatial / Imaging MS
 
+<div className="qpc-publications">
+
 <details>
-<summary><b>[Paper title]</b> — [First author] <i>et al.</i>, <i>[Journal]</i> ([Year])</summary>
+  <summary>
+    <span className="qpc-pub-title">[Paper title]</span>
+    <span className="qpc-pub-meta">[First author] <em>et al.</em>, <em>[Journal]</em> ([Year])</span>
+  </summary>
 
-<br />
+  <div className="qpc-details-intro">
+    Spatially resolved proteomics directly from tissue sections.
+  </div>
 
-**Spatial approach:** MALDI imaging / IHC-MS / etc.  
-**Tissue context:** [cancer type / organ]
+  **Spatial approach**  
+  MALDI imaging / IHC-MS
 
-- **Link / DOI:** [link]
+  **Tissue context**  
+  [Cancer type / organ]
+
+  - **Link / DOI:** [link]
 
 </details>
+
+</div>
 
 ---
 
 ## Selected publications
-<br />
 
-This section highlights a broader set of strong collaborative studies involving QPC (not necessarily with a figure shown). Keep entries concise.
+This section highlights a broader set of collaborative studies involving QPC.
 
 ### 2025
-- **[First author]**, [co-authors]. *[Title]*. **[Journal]** (2025). https://doi.org/xxxxx
 - **[First author]**, [co-authors]. *[Title]*. **[Journal]** (2025). https://doi.org/xxxxx
 
 ### 2024
 - **Rane G**, Kuan VLS, Wang S, *et al.* *ZBTB48 is a priming factor regulating B-cell-specific CIITA expression.* **The EMBO Journal** (2024). https://doi.org/10.1038/s44318-024-00306-y
-- **[First author]**, [co-authors]. *[Title]*. **[Journal]** (2024). https://doi.org/xxxxx
 
 ### 2023
 - **Yong WK**, Rane G, Zaal Anuar N, *et al.* *ChIP-MS reveals the local chromatin composition by label-free quantitative proteomics.* **bioRxiv** (2023). https://doi.org/10.1101/2023.01.27.525999
-- **[First author]**, [co-authors]. *[Title]*. **[Journal]** (2023). https://doi.org/xxxxx

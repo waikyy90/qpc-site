@@ -465,3 +465,32 @@ html[data-theme="dark"] img.qpc-illustration {
   border-left: 3px solid var(--ifm-color-primary-lightest);
   margin-bottom: 1.5rem;
 }
+
+/* =================================================
+   Publications layout fix
+   ================================================= */
+
+.qpc-publications details {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.qpc-publications summary {
+  font-weight: 400;            /* undo bold UI feel */
+  font-size: 0.95rem;
+  line-height: 1.45;
+  display: block;
+}
+
+.qpc-pub-title {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.qpc-pub-meta {
+  display: block;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
