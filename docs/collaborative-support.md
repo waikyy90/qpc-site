@@ -23,7 +23,7 @@ We work as collaborative research partners, helping researchers translate biolog
       <span>1. Start with the question</span>
     </div>
     <div className="qpc-stepBody">
-      We discuss the biological motivation, system, and constraints early to assess feasibility and avoid avoidable design pitfalls.
+      We discuss the biological motivation, system, and constraints early to assess feasibility and avoid common design pitfalls.
     </div>
   </div>
 
