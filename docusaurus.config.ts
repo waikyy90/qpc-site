@@ -16,10 +16,10 @@ const config = {
   // Hosting config (safe defaults for local dev)
   // We'll adjust later for GitHub Pages / custom domain.
   // =========================
-  url: 'https://waikyy90.github.io',
-  baseUrl: '/qpc-site/',
-  organizationName: 'waikyy90',
-  projectName: 'qpc-site',
+  url: 'https://csi-qpc.github.io',
+  baseUrl: '/',
+  organizationName: 'csi-qpc',
+  projectName: 'csi-qpc.github.io',
 
   // These are only needed for GitHub Pages deployment.
   // Keep placeholders for now; we'll set properly when deploying.
@@ -110,7 +110,7 @@ const config = {
           <a href="https://www.csi.nus.edu.sg/" target="_blank" rel="noopener noreferrer">CSI Singapore</a>, 
           <a href="https://www.nus.edu.sg/" target="_blank" rel="noopener noreferrer">NUS</a>.
           <br />
-          <a href="/qpc-site/for-collaborators">for collaborators</a>
+          <a href="/for-collaborators">For Collaborators</a>
         `,
       },
 

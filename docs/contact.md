@@ -19,4 +19,4 @@ Singapore 117599
 
 ---
 
-New to QPC? See [Get Started](/qpc-site/get-started)
+New to QPC? See [Get Started](/get-started)

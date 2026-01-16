@@ -15,10 +15,10 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         'collaborative-support',
-        'workflow',
         'expertise',
-        'instrumentation',
+        'workflow',
         'data-analysis',
+        'instrumentation',
         'get-started',
       ],
     },

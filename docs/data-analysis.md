@@ -8,7 +8,7 @@ import { Database, Layers, Sliders, BarChart3, Compass, AlertTriangle } from 'lu
 <br />
 
 Proteomics data analysis is treated as a continuation of experimental design rather than a downstream step.  
-Our approach focuses on dataset behaviour, inferential limits, and what conclusions can be supported with confidence.
+Our approach focuses on dataset behaviour, inferential limits, and the conclusions that can be supported with confidence.
 
 ---
 
@@ -22,7 +22,7 @@ Our approach focuses on dataset behaviour, inferential limits, and what conclusi
       <span>Dataset behaviour before interpretation</span>
     </div>
     <div className="qpc-stepBody">
-      We first assess whether the dataset behaves as expected based on experimental design, including sample composition, replicate structure, proteome depth, and data completeness.
+      We first assess whether the dataset behaves as expected given the experimental design, including sample composition, replicate structure, proteome depth, and data completeness.
     </div>
   </div>
 
@@ -32,7 +32,7 @@ Our approach focuses on dataset behaviour, inferential limits, and what conclusi
       <span>Replicate coherence and global structure</span>
     </div>
     <div className="qpc-stepBody">
-      Replicate consistency and global data structure are examined early to determine how reliably quantitative differences can be interpreted.
+      Replicate consistency and overall data structure are examined early to determine how reliably quantitative differences can be interpreted.
     </div>
   </div>
 
@@ -42,7 +42,7 @@ Our approach focuses on dataset behaviour, inferential limits, and what conclusi
       <span>Explicit filtering and threshold decisions</span>
     </div>
     <div className="qpc-stepBody">
-      Filtering criteria, completeness thresholds, and imputation parameters are defined explicitly and treated as analytical decisions that shape biological conclusions.
+      Filtering criteria, completeness thresholds, and imputation choices are defined explicitly and treated as analytical decisions that shape interpretation.
     </div>
   </div>
 
@@ -52,7 +52,7 @@ Our approach focuses on dataset behaviour, inferential limits, and what conclusi
       <span>Quantitative differences in context</span>
     </div>
     <div className="qpc-stepBody">
-      Statistical results are interpreted alongside effect sizes, replicate consistency, and coverage depth, rather than prioritising significance alone.
+      Statistical results are interpreted alongside effect sizes, replicate consistency, and coverage depth, rather than significance alone.
     </div>
   </div>
 
