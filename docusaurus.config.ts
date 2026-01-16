@@ -109,8 +109,12 @@ const config = {
           Quantitative Proteomics Core (QPC), 
           <a href="https://www.csi.nus.edu.sg/" target="_blank" rel="noopener noreferrer">CSI Singapore</a>, 
           <a href="https://www.nus.edu.sg/" target="_blank" rel="noopener noreferrer">NUS</a>.
+          <br />
+          <a href="/qpc-site/for-collaborators">for collaborators</a>
         `,
       },
+
+
 
 
       prism: {
